@@ -1,14 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --main-bg-color:#E9E9E9;
+    --primary-text-color:#424242;
+    --accent-color:#FF3F3C;
+}
+
 body {
+    background-color: ("--main-bg-color");
+    color:("--primary-text-color");
     font-family: "Inter", sans-serif;
-    color: #424242;
-    background: #E9E9E9;
-   
+    margin:0;
+    padding:0;
+}
+header {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+header h1{
+    margin:0;
+    font-weight:normal;
+}
+main{
+    background:url('polaroid.png') no-repeat center 100px;
+    margin:0, auto;
+    width:1000px;
 }
 
 nav {
     margin: 40px auto 0 auto;
-    width: 250px;
+    width: 40vw;
+    height: 7em;
     border-radius: 50px;
     background: #212431;
 }
@@ -18,32 +40,36 @@ nav ul {
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 nav ul li {
     list-style-type: none;
     margin: 0;
+    font-size:1.75em;
+    align-items: stretch;
 }
 
 nav ul li a {
     display: inline-block;
+    align-items: baseline;
     padding: 20px;
     color: #EAE8FF;
     text-decoration: none;
     font-size: 1.2em;
+    justify-content:space-evenly;
+    align-items: stretch;
 }
-
+#Panda{
+    border-radius: 50%;
+    width: 80px;
+    height:80px;
+}
 h1 {
     font-size: 8em;
     letter-spacing: -2px;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 img.about {
     opacity: 0.5;
@@ -56,4 +82,7 @@ input {
 #radial-gradient {
     background: radial-gradient(circle, black, white);
   }
-  
+#frontpage{
+    display:flex;
+    justify-content: center;
+}
