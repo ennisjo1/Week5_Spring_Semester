@@ -5,6 +5,40 @@
     --primary-text-color:#424242;
     --accent-color:#FF3F3C;
 }
+nav {
+    height: 20vh;
+    background: #212431;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 2vh;
+    font-size:1.75vh;
+    align-items: stretch;
+}
+
+nav ul li a {
+    display: inline-block;
+    align-items: baseline;
+    padding: .5vh;
+    color: #EAE8FF;
+    text-decoration: none;
+    font-size: 5vh;
+    justify-content:space-evenly;
+}
+#Panda{
+    border-radius: 50%;
+    width: 15vh;
+    height:15vh;
+}
 
 body {
     background-color: ("--main-bg-color");
@@ -22,67 +56,57 @@ header h1{
     font-weight:normal;
 }
 main{
-    background:url('polaroid.png') no-repeat center 100px;
-    margin:0, auto;
+    background: url('/images/Polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
     width:1000px;
 }
+.hero{
+    text-align: center;
+    min-height: 800px;
+}
+.hero h2{
+    font-size: 7em;
+    line-height:1em;
+    text-transform:uppercase;
+    margin:0;
+}
+.details ul li{
+    list-style-type:none;
+    margin: 10px 0;
+    padding: 0 0 0 40px;
+}
+.Wifi { background: url('/images/WIFI.svg') no-repeat center left;}
+.QR { background: url('/images/QR.svg') no-repeat center left;}
+.Media { background: url('/images/Media.svg') no-repeat center left;}
+.Cloud { background: url('/images/Cloud.svg') no-repeat center left;}
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 40vw;
-    height: 7em;
-    border-radius: 50px;
-    background: #212431;
+#clickbutton{
+    background-color: var(--accent-color);
+    width:150px;
+    height: 70px;
 }
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+#email{
+    width:400px;
+    height:70px;
+    padding: 0 20px 0 60px;
+    
 }
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-    font-size:1.75em;
-    align-items: stretch;
+.input{
+    display:flex;
+    align-items:baseline;
+    margin:40px auto;
 }
-
-nav ul li a {
-    display: inline-block;
-    align-items: baseline;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
-    justify-content:space-evenly;
-    align-items: stretch;
-}
-#Panda{
-    border-radius: 50%;
-    width: 80px;
-    height:80px;
-}
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
-}
-
-
-img.about {
-    opacity: 0.5;
-}
-
-input {
-    background-color: #FF3F3C;
-    color: #424242;
-}
-#radial-gradient {
-    background: radial-gradient(circle, black, white);
-  }
-#frontpage{
+h3{
     display:flex;
     justify-content: center;
+    font-size:5vh;
 }
+
+form{
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    width:700px;
+    height:150px;
+    margin: 0 auto;
+}
+
